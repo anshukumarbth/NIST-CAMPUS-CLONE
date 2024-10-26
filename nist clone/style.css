@@ -1,0 +1,753 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    }
+    body {
+    font-family : Arial, sans-serif;
+    line-height : 1.6;
+    width : 100%;
+    overflow-x : hidden;
+    }
+    .section1 {
+    display : flex;
+    justify-content : space-between;
+    background-color : #2d4697;
+    padding : 10px 20px;
+    }
+    .auto {
+    display : inline-block;
+    background-color : #df9d00;
+    padding : 5px 15px;
+    border-radius : 5px;
+    }
+    .container1 {
+    position : fixed;
+    top : 0;
+    z-index : 3;
+    width : 100%;
+    }
+    .auto a {
+    text-decoration : none;
+    text-align : center;
+    color : white;
+    font-weight : bold;
+    }
+    .row ul {
+    list-style : none;
+    display : inline-block;
+    }
+    .row ul li {
+    display : inline-block;
+    color : white;
+    margin-left : 15px;
+    padding-right : 5px;
+    cursor : pointer;
+    font-size : 14px;
+    transition : color 0.3s ease;
+    border-right : 2px solid white;
+    }
+    .row ul li:hover {
+    color : #df9d00;
+    }
+    .topmenu {
+    display : inline-block;
+    margin-left : 20px;
+    }
+    .topmenu input[type="search"] {
+    padding : 5px;
+    border : #2d4697 solid 2px;
+    border-radius : 5px;
+    }
+    .topmenu svg {
+    position : relative;
+    left : -30px;
+    top : 5px;
+    cursor : pointer;
+    color : #df9d00;
+    }
+    .bell-icon {
+    animation : blinker 1s ease-in-out infinite;
+    }
+    .section2 {
+    background-color : black;
+    padding : 20px;
+    color : white;
+    display : flex;
+    align-items : center;
+    }
+    .section2 img {
+    width : 100px;
+    margin-right : 20px;
+    }
+    .section2 p {
+    font-size : 20px;
+    font-weight : bold;
+    }
+    .section2 span {
+    font-size : 14px;
+    }
+    .section3 {
+    padding : 10px 20px;
+    background-color : #f4f4f4;
+    }
+    .section3 ul {
+    list-style : none;
+    }
+    .section3 ul li {
+    display : inline-block;
+    margin-right : 20px;
+    cursor : pointer;
+    padding : 10px;
+    font-size : 14px;
+    transition : color 0.3s ease;
+    border-right : 2px solid black;
+    }
+    .section3 ul li:hover {
+    color : #df9d00;
+    }
+    .section3 a {
+    background-color : #df9d00;
+    color : white;
+    text-decoration : none;
+    padding : 10px 20px;
+    border-radius : 5px;
+    animation : blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+    50% {
+    opacity : 0;
+    }
+    }
+    .section4 {
+    background-color : #2d4697;
+    color : white;
+    padding : 20px 0;
+    text-align : center;
+    }
+    .logo-setup {
+    width : 80%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    margin-left : 150px;
+    }
+    .section4 .logo {
+    display : inline-block;
+    margin-right : 20px;
+    }
+    .section4 .logo span {
+    font-size : 14px;
+    cursor : pointer;
+    transition : color 0.3s ease;
+    }
+    .section4 .logo span:hover {
+    color : #df9d00;
+    }
+    .section4 svg {
+    width : 20px;
+    color : white;
+    }
+    main {
+    padding-top : 37vh;
+    }
+    .campus {
+    background-image : url("assets/campus.jpg");
+    background-size : cover;
+    height : 350px;
+    background-position : center;
+    display : flex;
+    align-items : self-end;
+    }
+    .campus h1 {
+    font-size : 80px;
+    margin-bottom : 5px;
+    margin-left : 60px;
+    letter-spacing : 8px;
+    color : #f4f4f4;
+    font-family : sans-serif;
+    }
+    .left-logo {
+    z-index : 100;
+    position : fixed;
+    left : 0;
+    }
+    .left-logo i {
+    cursor : pointer;
+    }
+    .left-logo > div > svg {
+    height : auto;
+    }
+    .academic {
+    position : relative;
+    width : 100%;
+    height : auto;
+    }
+    .details {
+    width : 100%;
+    height : auto;
+    background-color : #f4f4f4;
+    }
+    .details h1 {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 136px;
+    width : 100%;
+    font-size : 30px;
+    }
+    .details p {
+    height : auto;
+    width : 80vw;
+    margin-left : 175px;
+    }
+    .lhc-details {
+    padding-top : 10px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    height : 450px;
+    width : 100%;
+    background-color : #dbd6d6;
+    }
+    .lhc-text {
+    margin-left : 30px;
+    }
+    .lhc-text h1 {
+    margin-bottom : 30px;
+    }
+    .lhc-details img {
+    margin-right : 15px;
+    }
+    .galleria-details {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding-top : 20px;
+    }
+    .galleria-text {
+    margin-left : 40px;
+    }
+    .galleria-text h1 {
+    margin-bottom : 30px;
+    }
+    .octagon-details {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding-top : 20px;
+    background-color : #dbd6d6;
+    }
+    .octagon-text {
+    margin-left : 40px;
+    }
+    .octagon-details .octagon-img {
+    margin-right : 10px;
+    }
+    .octagon-text h1 {
+    margin-bottom : 30px;
+    }
+    .atrium-details {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding-top : 20px;
+    }
+    .atrium-text {
+    margin-left : 40px;
+    }
+    .atrium-details .atrium-img {
+    margin-left : 10px;
+    }
+    .atrium-text h1 {
+    margin-bottom : 30px;
+    }
+    .tifac-details {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding-top : 20px;
+    width : 100%;
+    height : 400px;
+    background-color : #dbd6d6;
+    }
+    .tifac-text {
+    margin-left : 40px;
+    }
+    .tifac-details .tifac-img {
+    margin-right : 10px;
+    }
+    .tifac-text h1 {
+    margin-bottom : 30px;
+    }
+    .core-details {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding-top : 20px;
+    width : 100%;
+    height : 400px;
+    }
+    .core-text {
+    margin-left : 40px;
+    }
+    .core-details .core-img {
+    margin-left : 10px;
+    }
+    .core-text h1 {
+    margin-bottom : 30px;
+    }
+    .small-info {
+    display : flex;
+    justify-self : center;
+    align-items : center;
+    position : relative;
+    left : 120px;
+    top : -50px;
+    width : 80%;
+    height : 200px;
+    }
+    .laboratories {
+    width : 100%;
+    height : 250px;
+    }
+    .laboratories h1 {
+    text-align : center;
+    padding-top : 25px;
+    font-weight : 500;
+    }
+    .laboratories .laboratories-text {
+    width : 80%;
+    position : relative;
+    left : 160px;
+    top : 30px;
+    }
+    .branch {
+    width : 100%;
+    height : 460px;
+    }
+    .cse {
+    display : flex;
+    background-color : #dbd6d6;
+    }
+    .cse-text {
+    width : 60%;
+    height : 460px;
+    }
+    .cse-text h1 {
+    position : relative;
+    top : 40px;
+    left : 40px;
+    font-weight : 400;
+    }
+    .info-list {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 80px;
+    position : relative;
+    top : 50px;
+    }
+    .cse-img {
+    width : 40%;
+    height : 460px;
+    }
+    #img1-sec span {
+    margin-right : 10px;
+    }
+    #img2-sec span {
+    margin-right : 10px;
+    }
+    .ece {
+    display : flex;
+    }
+    .ece-text {
+    width : 60%;
+    height : 460px;
+    }
+    .ece-text h1 {
+    position : relative;
+    top : 20px;
+    font-weight : 400;
+    }
+    .ece-text .info-list1 {
+    position : relative;
+    left : 30px;
+    top : 20px;
+    }
+    .ece-img {
+    width : 40%;
+    height : 460px;
+    padding-top : 30px;
+    padding-left : 30px;
+    }
+    .eee {
+    display : flex;
+    background-color : #dbd6d6;
+    }
+    .eee-text {
+    width : 60%;
+    height : 460px;
+    }
+    .eee-text h1 {
+    position : relative;
+    top : 40px;
+    left : 30px;
+    font-weight : 400;
+    }
+    .eee-img {
+    width : 40%;
+    height : 460px;
+    padding-top : 30px;
+    padding-left : 10px;
+    }
+    .me {
+    display : flex;
+    }
+    .me-text {
+    width : 60%;
+    height : 460px;
+    }
+    .me-text h1 {
+    position : relative;
+    top : 45px;
+    font-weight : 400;
+    }
+    .me-text .info-list1 {
+    position : relative;
+    left : 30px;
+    top : 50px;
+    }
+    .me-img {
+    width : 40%;
+    height : 460px;
+    padding-top : 30px;
+    padding-left : 30px;
+    }
+    .ce {
+    display : flex;
+    background-color : #dbd6d6;
+    }
+    .ce-text {
+    position : relative;
+    top : 30px;
+    width : 60%;
+    height : 460px;
+    }
+    .ce-text h1 {
+    position : relative;
+    top : 45px;
+    left : 90px;
+    font-weight : 400;
+    }
+    .info-list1 h3 {
+    position : relative;
+    left : -10px;
+    font-weight : 300;
+    }
+    .ce-text .info-list1 {
+    position : relative;
+    left : 150px;
+    top : 50px;
+    }
+    .ce-img {
+    width : 40%;
+    height : 460px;
+    padding-top : 30px;
+    padding-left : 30px;
+    }
+    .hostel {
+    width : 100%;
+    height : auto;
+    }
+    .campus-hostel {
+    width : 100%;
+    height : 300px;
+    }
+    .campus-hostel h1 {
+    text-align : center;
+    position : relative;
+    top : 120px;
+    font-weight : 500;
+    }
+    .boyhotel-img .img1 span {
+    padding-left : 20px;
+    }
+    .hostel-info {
+    width : 80%;
+    height : 100px;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    margin-left : 160px;
+    text-align : center;
+    font-size : 20px;
+    font-weight : 500;
+    }
+    .img-overlay {
+    width : 100%;
+    height : 700px;
+    padding-top : 100px;
+    }
+    .img-overlay .img1, .img2, .img3 {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    }
+    .container {
+    position : relative;
+    margin : 10px;
+    }
+    .image {
+    display : block;
+    width : 100%;
+    height : auto;
+    }
+    .overlay {
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    height : 100%;
+    width : 100%;
+    opacity : 0;
+    transition : 0.5s ease;
+    background-color : #111728;
+    }
+    .container:hover .overlay {
+    opacity : 1;
+    }
+    .text {
+    color : white;
+    font-size : 20px;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    text-align : center;
+    }
+    .sports1 {
+    width : 100%;
+    height : 180vh;
+    }
+    .sport-factlities {
+    width : 100%;
+    height : 200px;
+    }
+    .sport-factlities h1 {
+    text-align : center;
+    position : relative;
+    top : 80px;
+    font-weight : 500;
+    }
+    .sport-info {
+    width : 80%;
+    height : 100px;
+    position : relative;
+    left : 150px;
+    top : 30px;
+    font-size : 15px;
+    font-weight : 500;
+    }
+    .img1, .img2, .img3 .container .overlay h1 {
+    color : #f4f4f4;
+    text-align : center;
+    padding-top : 10px;
+    }
+    .img1, .img2, .img3 .container .overlay {
+    font-size : 16px;
+    color : #f4f4f4;
+    text-align : center;
+    }
+    .adventure-sports {
+    width : 100%;
+    height : 700px;
+    }
+    .adventure-sports .adventure-text {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 300px;
+    font-weight : 500;
+    }
+    .adventure-sports .img1 {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 400px;
+    }
+    .img1, .img2, .img3 .container .overlay h3 {
+    color : #f4f4f4;
+    text-align : center;
+    padding-top : 10px;
+    }
+    .adventure-sports .img1 .container .overlay {
+    font-size : 20px;
+    }
+    .sport-activity {
+    width : 100%;
+    height : 500px;
+    }
+    .sport-activity .soprt-activity-text {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 100px;
+    font-weight : 500;
+    }
+    .sport-activity .img1 {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 400px;
+    }
+    .sport-activity .img1 .container .overlay {
+    font-size : 20px;
+    }
+    .other-service {
+    width : 100%;
+    height : 200vh;
+    }
+    .service-text {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 200px;
+    font-weight : 400;
+    }
+    .transport, .ambulance, .medical {
+    display : flex;
+    width : 100%;
+    height : 500px;
+    }
+    .transport-text, .medical-text {
+    position : relative;
+    left : 60px;
+    top : 130px;
+    width : 50%;
+    height : 200px;
+    }
+    .transport-img, .medical-img {
+    position : relative;
+    left : 20px;
+    top : 20px;
+    font-size : 20px;
+    }
+    .other-service .ambulance {
+    background-color : #dbd6d6;
+    }
+    .ambulance-text {
+    width : 40%;
+    height : 200px;
+    position : relative;
+    top : 130px;
+    left : 90px;
+    font-size : 20px;
+    }
+    .ambulance-img {
+    position : relative;
+    left : 250px;
+    top : 50px;
+    }
+    .upcoming-project {
+    width : 100%;
+    height : 80vh;
+    }
+    .project-text {
+    width : 100%;
+    height : 20vh;
+    }
+    .project-text h1 {
+    position : relative;
+    top : 50px;
+    font-weight : 400;
+    text-align : center;
+    }
+    .project-img {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 60vh;
+    }
+    .footer-container {
+    width : 100%;
+    height : 105vh;
+    background-color : #111728;
+    }
+    .footer-container1 {
+    display : flex;
+    justify-content : space-between;
+    width : 75%;
+    height : 60vh;
+    position : relative;
+    top : 70px;
+    margin-left : 190px;
+    border-bottom : 2px solid white;
+    }
+    .footer-container1 .list-container1, .list-container2, .list-container3, .list-container4 h2 {
+    color : #f4f4f4;
+    font-weight : 400;
+    }
+    .footer-container1 .list-container1, .list-container2, .list-container3, .list-container4 li {
+    list-style : none;
+    }
+    .footer-container1 .list-container1 li a:hover {
+    color : #df9d00;
+    }
+    .footer-container1 .list-container2 li a:hover {
+    color : #df9d00;
+    }
+    .footer-container1 .list-container3 li a:hover {
+    color : #df9d00;
+    }
+    .footer-container1 .list-container4 li a:hover {
+    color : #df9d00;
+    }
+    .footer-container1 .list-container1 li a {
+    color : white;
+    text-decoration : none;
+    }
+    .footer-container1 .list-container2 li a {
+    color : white;
+    text-decoration : none;
+    }
+    .footer-container1 .list-container3 li a {
+    color : white;
+    text-decoration : none;
+    }
+    .footer-container1 .list-container4 li a {
+    color : white;
+    text-decoration : none;
+    }
+    .footer-container2 {
+    width : 75%;
+    height : 30vh;
+    display : flex;
+    align-items : center;
+    margin-top : 100px;
+    margin-left : 190px;
+    }
+    .footer-container2 .container2-logo h4 {
+    margin-left : 18px;
+    color : white;
+    }
+    .footer-container2 .footer-text1 {
+    color : white;
+    margin-top : -40px;
+    margin-left : 10px;
+    font-weight : bold;
+    }
+    .footer-container2 .footer-text2 {
+    color : white;
+    margin-left : 100px;
+    margin-top : -40px;
+    }
+    .footer-container2 .footer-text2 p a {
+    text-decoration : none;
+    }
